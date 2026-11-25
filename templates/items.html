@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items</title>
+</head>
+<body>
+    <h1>All Items</h1>
+    <ul>
+    {% for item in found_items %}
+        <li>{{ item["name"] }}, {{ item["location"] }}, {{ item["date_found"] }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
